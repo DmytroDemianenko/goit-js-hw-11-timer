@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <h1 class="title"> Start to do something</h1>
     <div class="timer" id="timer-1">
         <div class="field">
           <span class="value" data-value="days">11</span>
@@ -33,5 +34,16 @@
           <span class="label">Seconds</span>
         </div>
       </div>
+
+      <div class="calendar">
+        <label for="start">Select date:</label>
+        <input type="date" id="start-date" name="trip-start"
+        value="2021-11-07"
+        min="2021-11-07" max="2033-12-31">
+      </div>
+
+      <!-- <button class="start-timer" type="button">Begin</button> -->
+
+      <script src="./index.js" type="module"></script>
   </body>
 </html>

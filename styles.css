@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url(./Photo/Forrest.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: thistle; */
+    color: rebeccapurple;
+    font-size: 36px;
+  }
+  .title {
+      color: tomato;
+      text-align: center;
+  }
+  .timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 45, 45, 30, 30;
+    color: rgb(0, 255, 128);
+  }
+  .calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  margin-top: 45px;
+    color: rgb(0, 255, 128);
+  }
+  .start-timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    color: black;
+    font-size: 33px;
+    border-radius: 8px;
+    border-color: blue;
+  }
