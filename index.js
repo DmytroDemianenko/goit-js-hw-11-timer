@@ -3,11 +3,11 @@ dateSelect.addEventListener('input', startTimer);
 function startTimer(){
   const selectTime = dateSelect.value; 
   
-  const exemple = new CountdownTimer({
+  const example = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date(selectTime),
 });
-console.log(exemple);
+console.log(example);
 }
 
 class CountdownTimer{
@@ -22,7 +22,9 @@ class CountdownTimer{
       const currentTime = new Date().getTime();
       const timeDifference = targetDate - currentTime;
       const timeComponent = this.getTimeComponent(timeDifference);
-      this.updateClock(timeComponent);
+      if(timeDifference<0) 
+      return  this.updateClock(timeComponent);
+
     }, 1000)
   }
   getTimeComponent(time){
